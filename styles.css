@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Koulen&family=Lato:wght@300&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&family=Roboto+Condensed&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very--Dark--Blue: hsl(234, 12%, 34%);
+    --Grayish--Blue: hsl(229, 6%, 66%);
+    --Very--Light--Gray: hsl(0, 0%, 98%);
+    }
+    
+   html, body {
+    font-size: 15px;
+    background-color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+   }
+
+  /* Header CSS */
+
+    header {
+        width:35%;
+        text-align: center;
+        margin: 80px auto;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header h1 {
+      font-weight: lighter;
+      font-size: 2.2vw;
+      margin-bottom: 15px;
+    }
+
+    header p {
+        opacity: 0.5;
+        font-size: 1.1vw;
+    }
+
+    header span {
+        font-weight: bold;
+        opacity: 0.7;
+    }
+
+    /* Header End */
+
+    /* Beginning of <main> and subsequent tags */
+
+
+
+main {
+    max-width:90vw;
+    height:100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-50px;
+    
+}
+
+.mid-col article {
+    background-color: white;
+    height:40%;
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+ }
+
+ main .mid-col {
+    width:30%;
+    height:100%;
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+ }
+
+ 
+ main .card {
+   width:26.8vw;
+   height:40vh;
+ }
+
+
+main .card .description {
+   font-size:1vw;
+}
+
+main .card .heading {
+   font-size: 1.3vw;
+   opacity: 0.8;
+}
+
+
+ .supervisor {
+    background-color: white;
+    border-radius: 5px;
+    border-top: 3px solid var(--Cyan);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+ }
+
+ .team-builder {
+    border-top: 3px solid var(--Red);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+ }
+
+ .karma {
+    border-top: 3px solid var(--Orange);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+ }
+
+ .calculator {
+    background-color: white;
+    border-radius: 5px;
+    border-top: 3px solid var(--Blue);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+ }
+
+ img {
+    float:right;
+    margin-top: 35px;
+    margin-right:40px;
+ }
+
+ .heading {
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    margin:20px 0px 0px 25px;
+    opacity: 0.9;
+ }
+
+ .description {
+    opacity: 0.5;
+    font-size: 0.9vw;
+    line-height: 1.8vw;
+    margin:0px 0px 0px 25px;
+ }
+
+
+  /* Header End */
+
+    /* Beginning of <main> and subsequent tags */
+
+    /** Media Query **/
+
+
+ @media (max-width:576px) {
+       
+ header {
+    min-width:375px;
+    text-align: center;
+    margin: 80px auto;
+    font-family: 'Poppins', sans-serif;
+ }
+
+header h1 {
+    font-weight: lighter;
+    font-size: 5vw;
+    margin-bottom: 15px;
+}
+
+header p {
+     opacity: 0.6;
+     font-size: 3vw;
+ }
+
+header span {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+main {
+    width:375px;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-50px;
+    flex-direction: column;
+    margin-top:400px;
+}
+
+  
+ main .mid-col {
+    width:100%;
+    height:100%;
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    
+ }
+
+ main .card {
+   width:26.8vw;
+   height:40vh;
+ }
+
+ main .card .description {
+   font-size:3vw;
+}
+
+main .card .heading {
+   font-size: 3.5vw;
+   opacity: 0.8;
+}
+
+
+
+ main .supervisor {
+    background-color: white;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border-top: 3px solid var(--Cyan);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+    padding:20px;
+    margin-top:-100px;
+ }
+
+
+ main .mid-col .team-builder {
+    border-top: 3px solid var(--Red);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+    width:100%;
+    height:100%;
+    padding:20px;
+ }
+
+ main .mid-col .karma {
+    
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+    width:100%;
+    height:100%;
+    padding:30px;
+    margin-top: 30px;
+ }
+
+
+ main .calculator {
+    background-color: white;
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border-top: 3px solid var(--Blue);
+    box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, .1);
+    margin-top:-2px;
+    padding:20px;
+ }
+
+ img {
+    float:right;
+    margin-top: 35px;
+    margin-right:40px;
+ }
+
+ .heading {
+    font-size: 1.5em;
+    line-height: 2.2;
+    margin:20px 0px 0px 25px;
+    opacity: 0.9;
+ }
+
+ .description {
+    opacity: 0.5;
+    font-size: 0.9em;
+    line-height: 1.8;
+    margin:0px 0px 0px 25px;
+ }
+    
+   
+ }
